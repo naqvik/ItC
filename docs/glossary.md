@@ -5,7 +5,7 @@ in his seminal text "Domain-Driven Design", 2004, Addison-Wesley.
 
 The following lists might eventually be replaced by tables
 
-Concepts:
+##Concepts:
 
 
 - Primary Road : the busier road of the two intersecting roads
@@ -19,7 +19,19 @@ Concepts:
 - SCM : Static Cycling Mode : a mode in which the lights in all
   directions cycle through a fixed (static) pattern, regardless of
   other inputs
-  
+- Vehicle Detector: VD : detects a vehicle approaching the
+  intersection, or stopped waiting at a red light.  There are four VDs
+  in an intersection: one for each of the four directions.
+- PRIVD : Priority Vehicle detector: detects an RBT approaching the
+  intersection and alters the lights to give priority to the vehicle.
+  The PRIVD will detect the vehicle much further away than the VD.
+- ERVD: Emergency Response Vehicle Detector: detects an ERV approaching the
+  intersection and alters the lights to give priority to the vehicle.
+  The ERVD will detect the vehicle much further away than the VD.
+- Walk Button: the button pressed by a pedestrian wishing to cross the
+  street.  An intersection will have four Walk Buttons.
+- Failsafe: this mode is entered in case of a system failure.  All
+  four directions will have flashing red lights
 
 Time parameters:
 
