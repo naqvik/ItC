@@ -36,8 +36,8 @@ The following lists might eventually be replaced by tables
 - **Failsafe**: this mode is entered in case of a system failure.  All
   four directions will have flashing red lights
 
-Time parameters:
-
+##Time parameters:
+###Input times: (defined by Operator)
 
 - **PGT** : Primary Green Time: the length of time the primary green
   light is on.
@@ -60,3 +60,5 @@ Time parameters:
   - a countdown timer giving the number of seconds remaining before
   RED For our purposes we will flash the blue WALK light on our
   solderless breadboard
+
+###Derived times (generated automatically from input times)
