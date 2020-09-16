@@ -60,5 +60,11 @@ The following lists might eventually be replaced by tables
   - a countdown timer giving the number of seconds remaining before
   RED For our purposes we will flash the blue WALK light on our
   solderless breadboard
+- **SGT** : Secondary Green time
+- **SYT** : Secondary Yellow time
+- **SRDT** : Secondary Red Delay Time
 
-###Derived times (generated automatically from input times)
+###Derived times (derived automatically from input times)
+- **PRT = PRDT+SGT+SYT+SRDT** : Primary Red Time
+- **SRT = PGT_PYT_PRDT** : Secondary Red Time
+- **FCT = PGT+PYT_PRDT_SGT_SYT_SRDT** : Full cycle time
