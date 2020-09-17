@@ -13,7 +13,11 @@
    intersection towards its destination.  However, in our system,
    vehicle arrival is (probably) always triggered by the Operator, so
    I'm not sure of its status.
-1. **anyone else?** there are other actors out there to be discovered
+1. **QA analyst** Runs the system, and runs tests, verifies the system
+   meets its requirements.
+1. **Timed events?** Another possible part of the system could
+   generate a stream of events.  We might consider this an Actor, if
+   it's outside the system we're designing.
 
 ## Requirements
 The _italicized_ items are there for completeness, but are beyond the
@@ -77,9 +81,12 @@ Triggered by Operator.
    (reduce green time).
 
 
-    - Q: what if it's yellow?
+    - Q: treat it as if it were red, and follow the same action.  In
+      the case of a left-turn-enabled intersection, skip the left-hand
+      turn and do a multi-directional left turn phase at the end
+      (after BRT leaves).
 2. Other considerations
-   1. What if an ERV happens during this use case?
+   1. What if an ERV happens during this use case? (overrides BRT, probably)
    2. What if there are two BRT vehicles approaching in the same lane?
       In opposite lanes?
    3. What if there are two BRT vehicles approaching: one in the

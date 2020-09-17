@@ -36,8 +36,8 @@ The following lists might eventually be replaced by tables
 - **Failsafe**: this mode is entered in case of a system failure.  All
   four directions will have flashing red lights
 
-##Time parameters:
-###Input times: (defined by Operator)
+## Time parameters:
+### Input times: (defined by Operator)
 
 - **PGT** : Primary Green Time: the length of time the primary green
   light is on.
@@ -64,7 +64,7 @@ The following lists might eventually be replaced by tables
 - **SYT** : Secondary Yellow time
 - **SRDT** : Secondary Red Delay Time
 
-###Derived times (derived automatically from input times)
+### Derived times (derived automatically from input times)
 - **PRT = PRDT+SGT+SYT+SRDT** : Primary Red Time
 - **SRT = PGT_PYT_PRDT** : Secondary Red Time
-- **FCT = PGT+PYT_PRDT_SGT_SYT_SRDT** : Full cycle time
+- **FCT = PGT+PYT+PRDT+SGT+SYT+SRDT** : Full cycle time
