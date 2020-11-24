@@ -39,8 +39,8 @@ project scope.
 1. The intersection controller shall have multiple operating modes to
    accomodate different traffic situations, including
    1. **failsafe** mode (4-way flashing red)
-   2. **static cycle mode** (fixed cycle times, responds to pedestrians,
-      ERV, and BRT)
+   2. **SCM: static cycle mode** (fixed cycle times, does not respond to
+      pedestrians, ERV, or BRT)
    3. **On-Demand Secondary mode** (secondary road only cycles when a
       vehicle or pedestrian is detected)
    4. **BRT mode** (handles a Bus Rapid Transit vehicle)
