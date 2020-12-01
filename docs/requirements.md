@@ -24,47 +24,22 @@ The _italicized_ items are there for completeness, but are beyond the
 project scope.
 
 
-1. Each Intersection is controlled by a separate intersection
-   controller, that can be configured manually from the attached
-   console *or remotely via the network*.
 
 1. The intersection has 2 intersecting roads and supports 1 *or more*
    lanes of vehicular traffic, as well as pedestrian traffic, in all 4
    directions.  *Also supports left-turn lanes*
 
-1. General detection of vehicles arriving and waiting at the intersection is
-   supported.  (This is normally done with passive induction loops
-   buried beneath the pavement.)
-
 1. The intersection controller shall have multiple operating modes to
    accomodate different traffic situations, including
-   1. **failsafe** mode (4-way flashing red)
+   1. **FSM: failsafe mode** (4-way flashing red)
    2. **SCM: static cycle mode** (fixed cycle times, does not respond to
       pedestrians, ERV, or BRT)
-   3. **On-Demand Secondary mode** (secondary road only cycles when a
-      vehicle or pedestrian is detected)
-   4. **BRT mode** (handles a Bus Rapid Transit vehicle)
-   5. **ERV mode** (handles an Emergency Response vehicle)
-   6. *Adaptive mode responds to changes in traffic statitics by
-      altering timings*
-1. Known events include
 
-    - Regular vehicle detected, with extensions 
-        - BRT detected 
-        - ERV detected
-
-    - Pedestrian detected
-    - any more?  time-based events?
-    
 1. Rule: If any traffic light is not red, the cross traffic light
    shall be red, and its walk light will be in DON'T WALK state.
-1. Rule: If any traffic light cannot communicate with the ItC, the ItC
-   goes into failsafe mode.
+   
 1. Accelerated test mode, for visually verifying correct operation,
    the system can be sped up by 10x, or 100x
-2. Collapsed-time mode.  The operation of the system is reduced to a
-   series of events, with no time lag.  This might be used for
-   verifying correct state transitions, avoiding any time lag.
 
 ## Use Cases
 ### UC1: Handle System Error
