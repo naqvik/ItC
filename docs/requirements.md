@@ -38,8 +38,10 @@ project scope.
 1. Rule: If any traffic light is not red, the cross traffic light
    shall be red, and its walk light will be in DON'T WALK state.
    
-1. Accelerated test mode, for visually verifying correct operation,
-   the system can be sped up by 10x, or 100x
+1. **ATM: Accelerated test mode** for visually verifying correct
+   operation, the system can be sped up by some reasonable factor, for
+   instance 10x, or 100x.  The point is to make the sequencing faster
+   so the observer can watch it for seconds instead of minutes.
 
 ## Use Cases
 ### UC1: Handle System Error
