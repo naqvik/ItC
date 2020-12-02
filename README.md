@@ -8,4 +8,4 @@ Here I'll put jump-off points to more detailed documentation.
 
 - [**glossary**](docs/glossary.md)
 - [**Domain Rules**](docs/domain-rules.md)
-- [**Actors, Requirements, Use Cases**](docs/requirements.md)
+- [**Actors, Requirements**](docs/requirements.md)
