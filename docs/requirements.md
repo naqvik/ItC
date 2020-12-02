@@ -27,7 +27,8 @@
 
 1. The intersection controller shall have multiple operating modes to
    accomodate different traffic situations, including
-   1. **FSM: failsafe mode** (4-way flashing red)
+   1. **FSM: failsafe mode** (4-way flashing red, at 0.5Hz with a 75\%
+      duty cycle)
    2. **SCM: static cycle mode** (fixed cycle times, does not respond to
       pedestrians, ERV, or BRT)
 
