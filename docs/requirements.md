@@ -19,15 +19,11 @@
    generate a stream of events.  We might consider this an Actor, if
    it's outside the system we're designing.
 
-## Requirements
-The _italicized_ items are there for completeness, but are beyond the
-project scope.
-
-
+## User-facing Requirements
 
 1. The intersection has 2 intersecting roads and supports 1 *or more*
    lanes of vehicular traffic, as well as pedestrian traffic, in all 4
-   directions.  *Also supports left-turn lanes*
+   directions.  <!-- *Also supports left-turn lanes* -->
 
 1. The intersection controller shall have multiple operating modes to
    accomodate different traffic situations, including
@@ -42,6 +38,30 @@ project scope.
    operation, the system can be sped up by some reasonable factor, for
    instance 10x, or 100x.  The point is to make the sequencing faster
    so the observer can watch it for seconds instead of minutes.
+   
+1. Commands supported
+   1. **help**: display a list of valid commands
+   1. **mode fsm**: switch to Failsafe mode
+   1. **mode scm**: switch to Static Cycle mode
+   1. **atm x**: accelerated test mode with multiplication factor
+      *x*.  This multiplies the speed of the intersection by *x*,
+      where *x* is between 1 and 100.  An *x* of 1 means run in normal
+      time, just like the real intersection.  Values of *x* outside
+      the range shall result in an error message.
+
+1. The sample timing diagram of the Gordon Road/ Lockwood Road should
+   be implemented as given.  The document is [here](https://intersection-timing.pdf)
+
+## Developer Requirements
+1. Three tasks should be implemented
+   1. **cliTask**
+   1. **statusUpdateTask**
+   1. **stateControllerTask**
+1. Two queues should be implemented
+   1. a queue allowing **cliTask** to send commands to
+      **stateControllerTask**.
+   1. a queue allowing **stateControllerTask** to send state
+      information to **statusUpdateTask**.
 
 ## Use Cases
 ### UC1: Handle System Error
