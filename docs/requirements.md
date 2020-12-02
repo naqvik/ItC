@@ -1,4 +1,4 @@
-# ItC: Actors, Requirements, and Use Cases
+# ItC: Actors and Requirements<!-- , and Use Cases -->
 
 ## Actors
 1. **Operator**: The person operating the console, this actor
@@ -19,7 +19,9 @@
    generate a stream of events.  We might consider this an Actor, if
    it's outside the system we're designing.
 
-## User-facing Requirements
+## Requirements
+
+### User-facing Requirements
 
 1. The intersection has 2 intersecting roads and supports 1 *or more*
    lanes of vehicular traffic, as well as pedestrian traffic, in all 4
@@ -77,7 +79,7 @@
    
 1. When the system starts up it enters FSM.
 
-## Developer Requirements
+### Developer Requirements
 1. Three tasks should be implemented
    1. **cliTask**
    1. **statusUpdateTask**
