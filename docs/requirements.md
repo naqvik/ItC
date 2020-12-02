@@ -51,7 +51,10 @@
       the range shall result in an error message.
 
 1. The sample timing diagram of the Gordon Road/ Lockwood Road should
-   be implemented as given.  The document is [here](./intersection-timing.pdf)
+   be implemented as given.  The document is
+   [here](./intersection-timing.pdf)
+1. When the Walk signal is in Walk Warning mode, it blinks at 1 Hz,
+   with a 50\% duty cycle.
 
 ## Developer Requirements
 1. Three tasks should be implemented
