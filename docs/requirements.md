@@ -50,7 +50,7 @@
       the range shall result in an error message.
 
 1. The sample timing diagram of the Gordon Road/ Lockwood Road should
-   be implemented as given.  The document is [here](https://intersection-timing.pdf)
+   be implemented as given.  The document is [here](./intersection-timing.pdf)
 
 ## Developer Requirements
 1. Three tasks should be implemented
